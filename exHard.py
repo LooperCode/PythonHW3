@@ -22,10 +22,6 @@ def Maxincrement(listRnd):
             minPos = tempMin
     return minPos, maxPos        
 
-
-                   
-                        
-
 listRnd = Createlist()
 print(listRnd)
 print(Maxincrement(listRnd))
