@@ -2,7 +2,7 @@ import random
 def Createlist():
     n = int(input("Число: "))
     listRnd = []
-    for i in range(n-1):
+    for i in range(n):
         listRnd.append(random.randint(1, 11)) 
     return listRnd
 
