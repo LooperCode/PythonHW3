@@ -24,6 +24,9 @@ def Maxincrement(listRnd):
 
 listRnd = Createlist()
 print(listRnd)
-print(Maxincrement(listRnd))
+listResult = []
+listResult.append(Maxincrement(listRnd))
+print(listResult)
+
 
     
