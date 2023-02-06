@@ -1,3 +1,18 @@
+def ValidChk (insertList):
+    charList = ["!", "@", "#", "$", "%", "^", "%", "&", "*", "(", ")", "_", '"', "-", "=", "+", ":", "", ".", ',', '>', '<', "|", "/"]      
+    for i in range(len(insertList)):
+        temp = insertList[i]
+        for char in range(len(temp)):
+            if temp[char] in charList:
+                continue
+            try:
+                temp[char] == int(temp[char])
+            except ValueError:
+                validList.append(temp[char])
+            else:
+                continue
+    return validList
+
 def PriceWord (validList):
     sum = 0
     temp = ()
@@ -15,20 +30,7 @@ def PriceWord (validList):
         
     return sum
         
-def ValidChk (insertList):
-    charList = ["!", "@", "#", "$", "%", "^", "%", "&", "*", "(", ")", "_", '"', "-", "=", "+", ":", "", ".", ',', '>', '<', "|", "/"]      
-    for i in range(len(insertList)):
-        temp = insertList[i]
-        for char in range(len(temp)):
-            if temp[char] in charList:
-                continue
-            try:
-                temp[char] == int(temp[char])
-            except ValueError:
-                validList.append(temp[char])
-            else:
-                continue
-    return validList
+
 
 
 
